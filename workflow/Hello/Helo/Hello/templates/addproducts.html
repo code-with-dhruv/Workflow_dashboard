@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Add Product {% endblock title %} 
+{% block Posts %}
+
+  
+<h1 class="text-center">Post Some Content</h1>
+<hr>
+<div class="form-group container my-4">
+<form method="POST">
+
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-secondary">Post</button>
+
+
+</div>
+
+
+{% endblock %}
